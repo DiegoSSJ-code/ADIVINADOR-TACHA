@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ADIVINADOR_TACHA.Page1">
+    <StackLayout Background="#010031">
+        <Frame BackgroundColor="#000771"
+               Padding="10"
+               CornerRadius="0">
+               <Label Text="Bienvenido al adivino 'Tacha'" 
+                   HorizontalTextAlignment="Center" 
+                   TextColor="White" FontSize="36"/>
+        </Frame>
+        <Button Text="ADIVINAR NUMERO QUE PIENSES"
+                x:Name="pagenw"
+                BackgroundColor="DarkGreen"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                Clicked="pagenw_Clicked"/>
+        <Button Text="ADIVINAR FECHA DE CUMPLEAÑOS"
+                x:Name="pagenw2"
+                BackgroundColor="DarkViolet"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                Clicked="pagenw2_Clicked"/>
+        <Frame BackgroundColor="#0400f2"
+               Padding="35"
+               CornerRadius="5"
+               VerticalOptions="Center"
+               HorizontalOptions="Center">
+            <Label Text="-Diego Daniel González López                                        0905 - 20 - 9706 Programacion I"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontSize="Title"/>
+        </Frame>
+    </StackLayout>
+
+</ContentPage>

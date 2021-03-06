@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ADIVINADOR_TACHA.MainPage">
+
+    <StackLayout Background=" #062000">
+        <Frame BackgroundColor="#42ff1b"
+               Padding="10"
+               CornerRadius="0">
+            <Label Text="ADIVINO EL NUMERO EN EL QUE PIENSES :)" 
+                   HorizontalTextAlignment="Center" 
+                   TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Para el correcto funcionamiento seguir las instrucciones: " 
+               FontSize="Small" 
+               Padding="30,10,30,10"
+               TextColor="White"/>
+        <Label Text="1. Si no es muy habilidoso con los calculos: Usar una calculadora." 
+               FontSize="Micro" 
+               Padding="30,0,30,0"
+               TextColor="White"/>
+        <Label Text="2. Seguir cada instrucción al pie de la letra." 
+               FontSize="Micro" 
+               Padding="30,0,30,0"
+               TextColor="White"/>
+        <Label Text="3. Llevar la secuencia de botones correcta." 
+               FontSize="Micro" 
+               Padding="30,0,30,0"
+               TextColor="White"/>
+        <Frame BackgroundColor="#15a100" 
+               Padding="2" 
+               CornerRadius="3"
+               VerticalOptions="Center"
+               HorizontalOptions="Center">
+            <Label Text="" 
+                   x:Name="instruccioneslbl" 
+                   FontSize="Subtitle" 
+                   TextColor="WhiteSmoke" 
+                   HorizontalTextAlignment="Center"/>
+        </Frame>
+        <FlexLayout>
+            <Button Text="PASO 1" 
+                x:Name="op1" 
+                BackgroundColor="AntiqueWhite" 
+                BorderWidth="3" 
+                BorderColor="DarkGreen"
+                HorizontalOptions="Center" 
+                VerticalOptions="Center" 
+                Clicked="op1_Clicked"/>
+            <Button Text="PASO 2" 
+                x:Name="op2" 
+                BorderWidth="3"
+                BorderColor="DarkGreen"
+                BackgroundColor="AntiqueWhite"
+                HorizontalOptions="Center" 
+                VerticalOptions="Center"
+                Clicked="op2_Clicked"/>
+            <Button Text="PASO 3" 
+                x:Name="op3" 
+                BorderWidth="3" 
+                BorderColor="DarkGreen"
+                BackgroundColor="AntiqueWhite" 
+                HorizontalOptions="Center" 
+                VerticalOptions="Center"
+                Clicked="op3_Clicked"/>
+            <Button Text="PASO 4"  
+                x:Name="op4" 
+                BackgroundColor="AntiqueWhite" 
+                BorderWidth="3" 
+                BorderColor="DarkGreen"
+                HorizontalOptions="Center" 
+                VerticalOptions="Center" 
+                Clicked="op4_Clicked"/>
+            <Button Text="PASO 5"  
+                x:Name="op5" 
+                BorderColor="DarkGreen"
+                BackgroundColor="AntiqueWhite" 
+                BorderWidth="3" 
+                HorizontalOptions="Center" 
+                VerticalOptions="Center"
+                Clicked="op5_Clicked"/>
+        </FlexLayout>
+        <Entry x:Name="resultado_final" 
+               Placeholder="Ingrese su resultado aqui." 
+               HorizontalTextAlignment="Center"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="Center" 
+               BackgroundColor="DarkOliveGreen"/>
+        <Button Text="ADIVINAR" 
+                x:Name="calc" 
+                BackgroundColor="#ff7966"
+                BorderWidth="5" 
+                CornerRadius="5" 
+                HorizontalOptions="Center" 
+                VerticalOptions="Center" 
+                Clicked="calc_Clicked"/>
+        <Button Text="LIMPIAR"
+                x:Name="limp"
+                Background="orange"
+                BorderWidth="5"
+                CornerRadius="5"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Clicked="limp_Clicked"/>
+    </StackLayout>
+
+</ContentPage>
